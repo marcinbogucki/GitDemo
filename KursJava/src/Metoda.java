@@ -18,5 +18,6 @@ public class Metoda {
 	public void wyswietlPowitanie()
 	{
 		System.out.println("Czesc Inzynier Bogucki");
+		System.out.println("Czesc Bogucki");
 	}
 }
