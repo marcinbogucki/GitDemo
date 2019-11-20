@@ -11,13 +11,8 @@ public class EdycjaStringow {
 		if(str.contains("$"))
 			
 		System.out.println("tekst zawiera dolara ");
-		System.out.println("tekst zawiera dolara3");
-		System.out.println("tekst zawiera dolara4");
-		//github test
-		// git teste
-		// git test
-		System.out.println("tekst zawiera dolara4");
-		System.out.println("tekst zawiera dolara4");
+		System.out.println("Tu dzialal architekt");
+		
 		
 		else
 			System.out.println("tekst nie zawiera znaku dolara");
