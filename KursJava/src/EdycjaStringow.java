@@ -15,7 +15,7 @@ public class EdycjaStringow {
 		
 		
 		else
-			System.out.println("tekst nie zawiera znaku dolara");
+			System.out.println("test brancha develop");
 		
 		System.out.println("znak na 13 pozycji :"+ str.charAt(13));
 		System.out.println("znak $ znajduje sie na pozycji "+ str.indexOf("$"));
