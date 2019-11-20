@@ -10,7 +10,7 @@ public class EdycjaStringow {
 		String str ="Zaplacono 100$";// jednoznaczne co String str = new String("Zaplacono 100$")
 		if(str.contains("$"))
 			
-		System.out.println("tekst zawiera dolara");
+		System.out.println("tekst zawiera dolara ");
 		System.out.println("tekst zawiera dolara3");
 		System.out.println("tekst zawiera dolara4");
 		//github test
