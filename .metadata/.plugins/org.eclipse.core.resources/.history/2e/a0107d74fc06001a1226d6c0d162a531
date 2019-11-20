@@ -1,0 +1,14 @@
+import java.sql.DriverManager;
+
+public class Jdbcpolaczenie {
+
+	public static void main(String[] args) {
+		
+		//wzor dla parametru url-     "jdbc:mysql://"+host":"+port+"/databasename";
+		DriverManager.getConnection("jdbc:mysql://"+locallhost":"+3306+"/qadtb", "root", "Vererbung");
+		
+		
+	
+	}
+
+}

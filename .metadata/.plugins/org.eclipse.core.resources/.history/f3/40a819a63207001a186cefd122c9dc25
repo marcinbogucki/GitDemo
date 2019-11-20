@@ -1,0 +1,13 @@
+
+public class base {
+
+	public static void main(String[] args) {
+	
+		// Appium code - projekt musi zawierac biblioteki klienta Appium zeby mogl rozpoznac kod ktory pisze
+	
+		// Krok 1 informacje do przekazania dla serwera
+		DesiredCapabilities cap = new DesiredCapabilities();
+		
+	}
+
+}

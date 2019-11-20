@@ -1,0 +1,41 @@
+package test;
+
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class day3 {
+
+	@Test
+	public void WeblogincarLoan()
+	{
+		System.out.println("Weblogincar");
+		//Kod Selenium do logowania
+	}
+	
+	@Test
+	public void MobileLogincarLoan()
+	{
+		System.out.println("MobileLogincar");
+		//kod Appium 
+	}
+	@Test
+	public void MobileSignoutcarLoan()
+	{
+		System.out.println("MobileSignin");
+		//kod Appium 
+	}
+	
+	@BeforeTest		// metoda zostanie wykonana jako pierwsza przed wszystkimi innymi testami nalezacymi do tego folderu
+	public void prerequiste()
+	{
+	System.out.println("Zostane wykonany jako pierwszy");
+	}
+	
+	@Test
+	public void LoginAPIcarLoan()
+	{
+		System.out.println("APIlogincar");
+		// rest Api automation
+	}
+}
+	

@@ -1,0 +1,26 @@
+package test;
+
+public class day4 {
+
+	@Test
+	public void WeblogincarLoan()
+	{
+		System.out.println("Weblogincar");
+		//Kod Selenium do logowania
+	}
+	
+	@Test
+	public void MobileLogincarLoan()
+	{
+		System.out.println("MobileLoginogincar");
+		//kod Appium 
+	}
+	
+	@Test
+	public void LoginAPI()
+	{
+		System.out.println("APIlogincar");
+		// rest Api automation
+	}
+}
+	

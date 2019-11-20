@@ -1,0 +1,17 @@
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class Jdbcpolaczenie {
+
+	public static void main(String[] args) throws SQLException {
+		
+		String host= "localhost";
+		String port="3306";
+		//wzor dla parametru url-     "jdbc:mysql://"+host":"+port+"/databasename";
+		DriverManager.getConnection("jdbc:mysql://"+host+":"+port+"/qadtb", "root", "Vererbung");
+		
+		
+	
+	}
+
+}

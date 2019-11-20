@@ -1,0 +1,77 @@
+package test;
+
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+public class day3 {
+
+	@BeforeClass
+	public void beforeclas()
+	{
+		System.out.println("jednorazowo przed wykonaniem metod w tej klasie @BeforClass");
+	}
+	
+	@Parameters({"URL"}) 
+	@Test
+	public void WebloginCarLoan(String urlname)
+	{
+		System.out.println("Weblogincar");
+		System.out.println(urlname);
+		//Kod Selenium do logowania
+	}
+	
+	@BeforeMethod
+	public void beforeevery()
+	{
+		System.out.println("uzylem @BeforeMethod");
+	}
+	
+	@AfterClass
+	public void afterclas()
+	{
+		System.out.println("po wykonaniu wszystkich metod w podanej klasie @AfterClass");
+	}
+	
+	@AfterMethod
+	public void afterevery()
+	{
+		System.out.println("uzylem anotacje @AfterMethod");
+	}
+	
+	@Test(groups={"Smoke"})
+	public void MobileLogincarLoan()
+	{
+		System.out.println("naleze do grupy smoke nazywam sie MobileLogincarLoan");
+		//kod Appium 
+	}
+	@BeforeSuite
+	public void Bfsuite()
+	{
+		System.out.println("Metoda wykonana przed zestawem testowym");
+	}
+	@Test
+	public void MobilesignoutcarLoan()
+	{
+		System.out.println("MobileSignin");
+		//kod Appium 
+	}
+	
+	@BeforeTest		// metoda zostanie wykonana jako pierwsza przed wszystkimi innymi testami nalezacymi do tego folderu
+	public void prerequiste()
+	{
+	System.out.println("Zostane wykonany jako pierwszy bo mam @BeforeTest");
+	}
+	
+	@Test(dependsOnMethods={"WebloginCarLoan"})
+	public void APIcarLoan()
+	{
+		System.out.println("APIlogincar");
+		// rest Api automation
+	}
+}

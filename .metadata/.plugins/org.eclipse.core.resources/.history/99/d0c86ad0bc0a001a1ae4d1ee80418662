@@ -1,0 +1,23 @@
+package datadriven;
+
+import java.io.FileInputStream;
+import java.util.Properties;
+
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+public class day4 {
+
+	@Test
+	public void Login()
+	{
+	Properties prop= new Propeties(); // obiekt do odczytu zmiennych globalnych
+	FileInputStream fis=newFileInputStream("C:\Users\mbogu\eclipse-workspaceNew\TestNgTutorial\src\test\datadriven.properties");
+	prop.load(fis);
+
+	System.out.println(username);
+	//driver.findElement(By.xpath).sendkeys(username);
+	}
+
+}
+	

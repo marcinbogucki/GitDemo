@@ -1,0 +1,22 @@
+import org.openqa.selenium.remote.DesiredCapabilities;
+
+import io.appium.java_client.remote.MobileCapabilityType;
+
+public class base {
+
+	public static void main(String[] args) {
+/*Zanim uruchomisz test sprawdz czy Serwer appium wystartowal i czy emulator jest otwarty.(cmd appium, cmd emulator -avd Moj_Handy)
+Desired Capabilities – informacje ktore daje serwerowi
+1. Chce Otworzyc emulator o nazwie Moj_Handy
+2. jaka aplikacje bede instalowac na emulatorze
+3. kroki do polaczenia z serwerem
+W pierwszej kolejnosci bedzie polaczenie z serwerem, potem przekaze informacje do serwera(nazwa aplikacji i emulatora) i na koncu zostanie wykonany kod testowy do testowania aplikacji. taka kolejnosc jest dla kazdego przypadku testowego.
+*/
+
+		// Krok 1 informacje do przekazania dla serwera
+		DesiredCapabilities cap = new DesiredCapabilities(); // klasa do wyslania informacji na serwer
+		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Moj_Handy");	// potrzebuje emulator o nazwie Moj_Handy
+		
+	}
+
+}
