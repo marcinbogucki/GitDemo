@@ -11,7 +11,7 @@ public class EdycjaStringow {
 		if(str.contains("$"))
 			
 		System.out.println("tekst zawiera dolara ");
-		System.out.println("Tu dzialal architekt");
+		System.out.println("Teraz nowa wersja");
 		
 		
 		else
